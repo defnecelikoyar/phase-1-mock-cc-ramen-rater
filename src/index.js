@@ -6,26 +6,10 @@
 //(2) Click on an image from the `#ramen-menu` div and see all the info about that
 //  ramen displayed inside the `#ramen-detail` div and where it says
 //  `insert comment here` and `insert rating here`.
-//(3) Create a new ramen after submitting the `new-ramen` form. The new ramen should
-//  be added to the`#ramen-menu` div.
+//(3) Create a new ramen after submitting the `new-ramen` form. The new ramen should be added to the`#ramen-menu` div.
 // 1. submit new ramen (EventListener, submit)
 // 2. add new ramen to ramen menu div (createElement, appendChild to ramen-menu)
 
-//ADVANCED
-// - (1) See the details for the first ramen as soon as the page loads (without
-//  clicking on an image)
-// 1. first ramen ex. ramens[0]
-// 2. when the page loads
-// 3. need to fetch (GET /ramens/1)
-//  - (2) Update the rating and comment for a ramen by submitting a form. Changes should be reflected on the frontend. No need to persist. You can add this HTML to the `index.html` file to create the edit form: (code)
-// 1. submit new info to ramen (EventListener, submit)
-// 2. new info is visible
-//  - (3) Delete a ramen (you can add a "delete" button if you'd like, or use an
-//    existing element to handle the delete action). The ramen should be removed
-//    from the `ramen-menu` div, and should not be displayed in the `ramen-detail`
-//    div. No need to persist.
-// 1. add delete button
-// 
 document.addEventListener('DOMContentLoaded', () => {
     const ramenMenu = document.querySelector('div#ramen-menu')
     const ramenImage = document.querySelector('img.detail-image')
@@ -51,13 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 commentDisplay.textContent = ramen.comment
             })
         })
-    
-    
     }
-//(3) Create a new ramen after submitting the `new-ramen` form. The new ramen should
-//  be added to the`#ramen-menu` div.
-// 1. submit new ramen (EventListener, submit)
-// 2. add new ramen to ramen menu div (createElement, appendChild to ramen-menu)
 
     const newRamenForm = document.querySelector('form#new-ramen')
     const newRamenName = document.querySelector('input#new-name')
@@ -90,10 +68,5 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 })
-//  - Delete a ramen (you can add a "delete" button if you'd like, or use an
-//    existing element to handle the delete action). The ramen should be removed
-//    from the `ramen-menu` div, and should not be displayed in the `ramen-detail`
-//    div. No need to persist.
-
 
 
