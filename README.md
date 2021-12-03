@@ -64,9 +64,7 @@ As a user, I can:
 
 - See the details for the first ramen as soon as the page loads (without
   clicking on an image)
-- Update the rating and comment for a ramen by submitting a form. Changes should
-  be reflected on the frontend. No need to persist. You can add this HTML to the
-  `index.html` file to create the edit form:
+- Update the rating and comment for a ramen by submitting a form. Changes should be reflected on the frontend. No need to persist. You can add this HTML to the  `index.html` file to create the edit form:
 
 ```html
 <form id="edit-ramen">
